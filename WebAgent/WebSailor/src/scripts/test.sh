@@ -2,7 +2,7 @@ export JINA_API_KEY="your_jina_api_key"
 export SEARCH_API_URL="your_search_api_url"
 export GOOGLE_SEARCH_KEY="your_google_search_key"
 
-export SUMMARY_MODEL_PATH="/path/Qwen2.5-72B-Instruct"
+export SUMMARY_MODEL_PATH="Qwen/Qwen2.5-72B-Instruct"
 export MAX_LENGTH=$((1024 * 31 - 500))
 
 cd src
@@ -16,4 +16,4 @@ cd src
 # - browsecomp_en (Full set, 1266 Cases)
 # - xbench-deepsearch
 
-bash run.sh websailor_3b gaia output_path
+bash run.sh Alibaba-NLP/WebSailor-3B gaia ../outputs
